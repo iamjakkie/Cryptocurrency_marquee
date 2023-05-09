@@ -1,0 +1,120 @@
+body {
+    /*   background-color: #0c0f13; */
+      background-color: #01191d;
+      color: #fff;
+      font-family: sans-serif;
+    }
+    
+    .title-container {
+      width: 100%;
+      letter-spacing: 0.12em;
+      text-align: center;
+      font-size: 3em;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    
+    .title {
+      color: #921D08;
+      margin: 0;
+      padding: 1rem;
+      font-weight: 800;
+      overflow: hidden;
+    }
+    
+    .title span {
+      display: inline-block;
+    }
+    
+    .subtitle {
+      cursor: pointer;
+      margin: 0;
+      margin-bottom: 10px;
+      padding: 0 1rem;
+      background: linear-gradient(to top, #921D08, #ffa899);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      animation: fade-in 2s linear forwards;
+    }
+    
+    @keyframes fade-in {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+    
+    .subtitle:hover {
+      color: #fff;
+      text-shadow: 0 0 5px #03e9f4,
+                  0 0 25px #03e9f4,
+                  0 0 50px #03e9f4,
+                  0 0 100px #03e9f4;
+    }
+    
+    marquee {
+      background-color: #011114;
+      width: 100%;
+      overflow: hidden;
+      height: 3rem;
+      letter-spacing: 0em;
+      
+      .ticker {
+        font-weight: 800;
+        line-height: 3rem;
+        font-size: 1rem;
+        vertical-align: middle;
+        white-space: nowrap;
+        box-sizing: content-box;
+      }
+      
+      .ticker__item {
+        vertical-align: middle;
+        margin-right: 1rem;
+      }
+    }
+    
+    marquee:hover {
+      -webkit-animation-play-state: paused;
+    }
+    
+    .coin {
+      margin-right: 0.4rem;
+      margin-left: 1rem;
+    }
+    
+    .token {
+      margin-right: 0.5rem;
+    }
+    
+    img {
+      height: 1.5rem;
+      margin-bottom: 0.1rem;
+      line-height: 1.5rem;
+      vertical-align: middle;
+    }
+    
+    /* .per {
+      margin-left: 0.5rem;
+    } */
+    
+    .up {
+      color: #16ceb9;
+    }
+    
+    .per.up:before {
+      content: "↑";
+    }
+    
+    .down {
+      color: #ff004e;
+    }
+    
+    .per.down:before {
+      content: "↓";
+    }
